@@ -10,6 +10,8 @@ import java.util.List;
  */
 public interface Game extends Serializable {
 
+    Player registerPlayer(String name, int rank);
+
     public List<Match> getMatchHistory();
 
     public Collection<Player> getAllPlayers();
